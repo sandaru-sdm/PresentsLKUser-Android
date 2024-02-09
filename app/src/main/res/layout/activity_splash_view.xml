@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".SplashViewActivity">
+
+    <TextView
+        android:id="@+id/spashTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/presentslk"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="100dp"
+        android:textSize="50sp"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/splashImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginBottom="80dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/v_1_0_0"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:textSize="12sp"/>
+
+    <ProgressBar
+        android:id="@+id/splashProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="100dp" />
+
+</FrameLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "772246628734",
+    "firebase_url": "https://presentslk-5fe21-default-rtdb.firebaseio.com",
+    "project_id": "presentslk-5fe21",
+    "storage_bucket": "presentslk-5fe21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772246628734:android:267686985ef22715dbab2f",
+        "android_client_info": {
+          "package_name": "com.sdm.presentslk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772246628734-9af1a2ol959aaoe8beis9s0l0sp7v1mr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sdm.presentslk",
+            "certificate_hash": "862ef6a3641b8305a359c7faa728f3862b16c0ad"
+          }
+        },
+        {
+          "client_id": "772246628734-q9ftb730kls9a28c3vv0l500uo8if6fd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaCzvUn2dKdo2zBdacnuihUN54cFZ0OHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772246628734-q9ftb730kls9a28c3vv0l500uo8if6fd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

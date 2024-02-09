@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        tools:context=".RegisterActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/purple">
+
+                <TextView
+                    android:id="@+id/textView_register_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/white"
+                    android:text="@string/sign_up_type"
+                    android:textAlignment="center"
+                    android:textSize="40sp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-50dp"
+                android:background="@drawable/border"
+                android:padding="15dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/RL_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:id="@+id/imageViewName"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/signup" />
+
+                    <Button
+                        android:id="@+id/buttonSignUp"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/green"
+                        android:text="@string/register" />
+
+
+                    <View
+                        android:id="@+id/dividersignUp"
+                        android:layout_width="250dp"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/buttonSignUp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@android:color/darker_gray" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL_signUpWithGoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RL_signUp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:id="@+id/imageViewsignUpWithGoogle"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/google" />
+
+                    <Button
+                        android:id="@+id/buttonSignUpWithGoogle"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/green"
+                        android:text="@string/register_with_google" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/RL_signUpWithOneTap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/RL_signUpWithGoogle"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:id="@+id/imageViewsignUpWithOneTap"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/onetapicon" />
+
+                    <Button
+                        android:id="@+id/buttonSignUpWithOneTap"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:backgroundTint="@color/green"
+                        android:text="@string/register_with_onetap" />
+
+
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:elevation="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

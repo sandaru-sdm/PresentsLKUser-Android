@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple"
+        android:elevation="4dp"
+        app:titleTextColor="@color/white"
+        app:navigationIconTint="@color/white"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="PresentsLK"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+
+    <RelativeLayout
+        android:id="@+id/RL_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_us"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:padding="15dp"
+        android:layout_below="@+id/RL_head">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="180dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textViewMainHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewLogo"
+            android:layout_marginTop="10dp"
+            android:text="@string/presentslk"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+
+        <LinearLayout
+            android:id="@+id/LL_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMainHead"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/textViewContactUs"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_us"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textViewMobileNumber"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_94_70_179_4934"
+                android:textColor="@color/purple"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMainHead"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textViewAddress_aboutUs"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="@string/_351_d_pahala_imbulgoda_imbulgoda"
+                android:textColor="@color/purple"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMainHead"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="110dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textViewEmail_aboutUs"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/maduhansadilshan_gmail_com"
+                android:textColor="@color/purple"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/purple"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:minHeight="50dp"
+        app:labelVisibilityMode="unlabeled"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
